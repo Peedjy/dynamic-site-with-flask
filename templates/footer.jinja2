@@ -1,0 +1,126 @@
+<!-- info section -->
+<section class="info_section layout_padding-top layout_padding2-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_links pl-lg-5">
+            <h4>
+              Menu
+            </h4>
+            <ul>
+              <li>
+                <a href="{{ url_for('index') }}">
+                  Home
+                </a>
+              </li>
+
+              <li>
+              <a class="" href="{{ url_for('about') }}">About </a>
+              </li>
+
+              <li>
+                <a class="" href="{{ url_for('portfolio') }}">Portfolio </a>
+              </li>
+              <li>
+                <a class="" href="{{ url_for('service') }}">Services</a>
+              </li>
+              <li>
+                <a href="{{ url_for('contact') }}">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_contact">
+            <h4>
+              Location
+            </h4>
+            <div>
+              <img src="{{ url_for('static', filename='images/location.png') }}" alt="" />
+              
+              <p>
+                104 loram ipusm
+              </p>
+            </div>
+            <div>
+              <img src="{{ url_for('static', filename='images/telephone.png') }}" alt="" />
+              <p>
+                ( +01 1234567890 )
+              </p>
+            </div>
+            <div>
+              <img src="{{ url_for('static', filename='images/envelope.png') }}" alt="" />
+              <p>
+                demo@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="info_social">
+            <h4>
+              Social Link
+            </h4>
+            <div class="social_container">
+              <div>
+                <a href="">
+                  <img src="{{ url_for('static', filename='images/facebook-logo.png') }}" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="{{ url_for('static', filename='images/twitter-logo.png') }}" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="{{ url_for('static', filename='images/instagram.png') }}" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="{{ url_for('static', filename='images/linkedin-sign.png') }}" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_form">
+            <h4>
+              Newsletter
+            </h4>
+            <form action="#">
+              <input type="text" placeholder="Enter Your Email" />
+              <button type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; 2019 All Rights Reserved By
+      <a href="https://html.design/">Free Html Templates</a>
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}""></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.js') }}""></script>
+  <script src="{{ url_for('static', filename='js/circles.min.js') }}""></script>
+  <script src="{{ url_for('static', filename='js/custom.js') }}""></script>
+
+</body>
+
+</html>
